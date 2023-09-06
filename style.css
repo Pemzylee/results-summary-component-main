@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Static;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Static;
+}
+
+.container {
+    background-color: hsl(252, 100%, 67%, 0.01);
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    width: 20vw;
+    border-radius: 20px;
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result-score {
+    background: linear-gradient( hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    height: 25vh;
+    width: 12vw;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.result-score p {
+    color: hsl(241, 100%, 89%);
+    font-weight: 700;
+}
+
+.result-score span {
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.comment p {
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    padding-inline: 20px;
+    font-weight: 500;
+}
+
+.result-box {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    width: 20vw; 
+    border-radius: 0 20px 20px 0; 
+    box-shadow: 15px 15px 15px hsl(221, 100%, 96%) ;
+}
+
+.result-box h1 {
+    font-size: 20px;
+    position: relative;
+    right: 25%;
+    color: hsl(224, 30%, 27%);
+}
+
+.result-box section div {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 5px;
+    padding: 10px;
+    height: 5vh;
+    width: 15vw;
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%,  19%);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color:hsl(39, 100%, 56%) ;
+}
+
+.verbal {
+    background-color:hsl(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
+
+.continue-btn {
+    border-radius: 40px;
+    background-color:hsl(224, 30%, 27%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17vw;
+    height: 7vh;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+}
+
+.result-box div span{
+    color: hsl(224, 30%, 27%);
+    font-weight: 500;
+}
+
+.result-box div p{
+    display: flex;
+    gap: 5px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+.continue-btn:hover {
+    cursor: pointer;
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result-box section h4 {
+    display: flex;
+    gap: 5px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        display: block;
+        padding: 0;
+    }
+    .result {
+        height: 45vh;
+        width: 96vw;
+        position: relative;
+        top: -10px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .result-score {
+        height: 65vh;
+        width: 40vw;
+    }
+
+    .result-box {
+        width: 96vw; 
+        box-shadow: 0px 0px hsl(221, 100%, 96%) ;
+    }
+
+    .result-box section div {
+        width: 70vw;
+        font-size: 15px;
+    }
+
+    .continue-btn {
+        width: 70vw;
+        font-size: 15px;
+    }
+}
